@@ -1,0 +1,91 @@
+# ---------------------------------------------------------------
+# Line endings
+# ---------------------------------------------------------------
+# Normalize to LF in the repo, check out native on each machine.
+* text=auto
+
+*.cs        text diff=csharp
+*.md        text
+*.json      text
+*.txt       text
+*.yml       text
+*.shader    text
+*.hlsl      text
+*.cginc     text
+
+# ---------------------------------------------------------------
+# Unity YAML - text, but hand merges to Unity's smart merge tool.
+# See README "Resolving scene/prefab conflicts" to enable it.
+# ---------------------------------------------------------------
+*.unity          text merge=unityyamlmerge eol=lf
+*.prefab         text merge=unityyamlmerge eol=lf
+*.asset          text merge=unityyamlmerge eol=lf
+*.mat            text merge=unityyamlmerge eol=lf
+*.anim           text merge=unityyamlmerge eol=lf
+*.controller     text merge=unityyamlmerge eol=lf
+*.overrideController text merge=unityyamlmerge eol=lf
+*.physicMaterial text merge=unityyamlmerge eol=lf
+*.physicsMaterial2D text merge=unityyamlmerge eol=lf
+*.playable       text merge=unityyamlmerge eol=lf
+*.mask           text merge=unityyamlmerge eol=lf
+*.brush          text merge=unityyamlmerge eol=lf
+*.flare          text merge=unityyamlmerge eol=lf
+*.fontsettings   text merge=unityyamlmerge eol=lf
+*.guiskin        text merge=unityyamlmerge eol=lf
+*.giparams       text merge=unityyamlmerge eol=lf
+*.meta           text merge=unityyamlmerge eol=lf
+*.mixer          text merge=unityyamlmerge eol=lf
+*.terrainlayer   text merge=unityyamlmerge eol=lf
+*.inputactions   text eol=lf
+
+# ---------------------------------------------------------------
+# Binary assets - stored in git directly (this project is small).
+# Marked binary so git skips line-ending conversion and text diffs.
+#
+# If the project later grows heavy art (large .psd/.fbx/audio), switch
+# these to Git LFS with:  git lfs track "*.psd"
+# ---------------------------------------------------------------
+# Images
+*.psd   binary
+*.psb   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.tga   binary
+*.tif   binary
+*.tiff  binary
+*.gif   binary
+*.bmp   binary
+*.exr   binary
+*.hdr   binary
+
+# 3D models
+*.fbx   binary
+*.blend binary
+*.obj   binary
+*.dae   binary
+*.3ds   binary
+*.ma    binary
+*.mb    binary
+
+# Audio
+*.wav   binary
+*.mp3   binary
+*.ogg   binary
+*.aif   binary
+*.aiff  binary
+*.flac  binary
+
+# Video
+*.mp4   binary
+*.mov   binary
+*.webm  binary
+
+# Fonts & native binaries
+*.ttf   binary
+*.otf   binary
+*.dll   binary
+*.so    binary
+*.dylib binary
+*.a     binary
+*.bundle binary
