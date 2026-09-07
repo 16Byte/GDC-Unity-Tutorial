@@ -234,5 +234,16 @@ git pull
 git stash pop
 ```
 
+**Clone fails with "Filename too long" (Windows).**
+Windows caps paths at 260 characters and a couple of asset names in this project
+are long. Turn on long-path support once per machine, then clone again:
+
+```bash
+git config --global core.longpaths true
+```
+
+Cloning into a short folder like `C:\Dev\GDCTut` also avoids it. Deeply nested
+locations (especially OneDrive-redirected `Documents` folders) are the usual cause.
+
 **I committed something huge by accident.**
 Stop and ask before pushing — it's much easier to fix before it reaches GitHub.
