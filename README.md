@@ -196,7 +196,8 @@ Assets/
   Plugins/        Third-party: PMG Proto-Grid prototyping textures
   Prefabs/
     Enemies/      Enemy.prefab
-    Weapons/      Pistol, Shotgun, and their pickup variants
+    Weapons/      Pistol.prefab, Shotgun.prefab
+      Pickup/     Pickup Base + variants (see that folder's README)
   Scenes/         SampleScene.unity — the playable scene
   Scripts/
     Enemies/      Enemy.cs, EnemyManager.cs
