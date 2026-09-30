@@ -15,12 +15,13 @@ public class EnemyMovement : MonoBehaviour
     {
         // this searches the entire heirarchy for the exact object named "Player". This is epensive so best called sparingly.
         var playerObject = GameObject.Find("Player");
+
         // and print a warning if no player found
         if (playerObject != null)
-        {
             playerTransform = playerObject.transform;
-            //Debug.Log($"{gameObject.name} could not fine a player object in the scene");
-        }
+
+        else
+            Debug.Log($"{gameObject.name} could not fine a player object in the scene");
 
 
         // setting this at start to avoid weird pathing

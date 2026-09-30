@@ -1,0 +1,22 @@
+both:
+download instructions (release on GitHub)
+open with unity hub
+
+Mark:
+Editor window overview
+create your first prefab
+
+Diego:
+look at our complex prefab
+explain the unity callbacks (awake, start, update, fixedupdate)
+explain a raycast and how we use it
+explain the weapons overview (pickup uses collider with trigger, explain callback)
+
+Mark:
+explain enemypathing scene
+material showcase 
+kick off the make your own level in tutorial scene
+
+rest of time: 
+let them build their level with questions
+maybe we mess around on the big screen too
